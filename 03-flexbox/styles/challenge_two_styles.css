@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+    /* justify-content: space-evenly; */
+    /* gap: 4px; */
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-left: 18px;
+    margin-top: 8px;
+}
