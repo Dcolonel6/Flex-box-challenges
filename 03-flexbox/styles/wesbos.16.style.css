@@ -1,0 +1,59 @@
+*{
+   
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(250deg, #2376ae, #c16ecf 100%);
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1000px;
+}
+img {
+    max-width: 100%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    background:rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+}
+a:hover{
+    background:rgba(0, 0, 0, 0.4);    
+}
+/* our main flex container -level 1 */
+.slider-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;    
+}
+/* immediate flex-items of the main flexcontainer */
+
+.slider-nav li {
+    flex:2; /* this is a flex item */
+    display: flex;    /* nesting another flex container. At this point this both a flex item and a flex container .Flex container level2 */
+    text-align: center;
+    justify-content: center;
+}
+.slider-nav .arrow {
+    flex: 1;    /* this is a flex item and also a flex container */
+}
+.slider-nav a {
+    flex-basis: 100%; /* flex container level 3. Also a flex item of level 2 flex container */
+    display: flex;
+    align-items: center;   
+    
+}
+
+.slider-nav span {
+    display: block; /* flex item of level 3 container */
+    width: 100%;
+}
+.arrow span {
+    font-size: 30px;
+}
